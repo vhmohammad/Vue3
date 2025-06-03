@@ -3,7 +3,7 @@
   <h1> Poroject Web </h1>
 
   <router-link to="/TodoList">
-    <button class="btn btn-primary m-2 rounded-pill">
+    <button type="button" class="btn btn-primary">
       TodoList
     </button>
   </router-link>
