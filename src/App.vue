@@ -1,14 +1,18 @@
 <template>
 
-  <h1> Todo List </h1>
+  <h1> Poroject Web </h1>
 
-  <TodoList />
+  <router-link to="/TodoList">
+    <button class="btn btn-primary m-2 rounded-pill">
+      TodoList
+    </button>
+  </router-link>
+  <router-view></router-view>
 
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TodoList from './components/TodoList.vue'
+
 </script>
 
 <style scoped>
