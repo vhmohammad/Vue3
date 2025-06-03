@@ -1,6 +1,7 @@
 <template>
   <div class="todo-container">
-    <h1>لیست کارها</h1>
+    <h1> Todo List </h1>
+    <h3>لیست کارها</h3>
 
     <h1> {{ newTask }} </h1>
 
@@ -38,6 +39,7 @@
 
 <script>
 export default {
+  name: 'TodoList',
   data() {
     return {
       newTask: '',
