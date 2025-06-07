@@ -6,34 +6,34 @@
     <h1> {{ newTask }} </h1>
 
 
-    <input v-model="newTask" placeholder="تسک جدید را وارد کنید..."/>
-    <button @click="addTask">افزودن</button>
+    <input v-model="newTask" class="text" placeholder=" تسک جدید را وارد کنید " @keyup.enter="addTask" />
+    <button @click="addTask" class="marjin btn btn-secondary">افزودن</button>
 
 
     <h2>تسک‌های انجام نشده</h2>
     <table v-if="unfinishedTasks.length">
       <tr v-for="(task, index) in unfinishedTasks" :key="index">
-        <td><input type="checkbox" v-model="task.done" @change="saveTasks"/></td>
+        <td><input class="pointer" type="checkbox" v-model="task.done" @change="saveTasks"/></td>
         <td>{{ task.text }}</td>
         <td>
-          <button @click="deleteTask(task)">🗑️</button>
+          <button class="btn btn-outline-danger" @click="deleteTask(task)">🗑️</button>
         </td>
       </tr>
     </table>
-    <p v-else>همه کارها انجام شده‌اند! 🎉</p>
+    <p v-else> 🎉 ! همه کارها انجام شده‌اند </p>
 
 
     <h2>تسک‌های انجام شده</h2>
     <table v-if="finishedTasks.length">
       <tr v-for="(task, index) in finishedTasks" :key="index">
-        <td><input type="checkbox" v-model="task.done" @change="saveTasks"/></td>
+        <td><input class="pointer" type="checkbox" v-model="task.done" @change="saveTasks"/></td>
         <td><s>{{ task.text }}</s></td>
         <td>
-          <button @click="deleteTask(task)">🗑️</button>
+          <button class="btn btn-outline-danger" @click="deleteTask(task)">🗑️</button>
         </td>
       </tr>
     </table>
-    <p v-else>فعلاً کاری انجام نشده.</p>
+    <p v-else> فعلاً کاری انجام نشده </p>
   </div>
 </template>
 
@@ -89,11 +89,33 @@ export default {
 </script>
 
 <style scoped>
+.marjin{
+
+  margin-left: 6px;
+
+}
+
+.text{
+
+  text-align: right;
+  border-radius: 7px;
+
+}
+
+.pointer{
+
+  cursor: pointer;
+
+}
+
 .todo-container {
   max-width: 600px;
   margin: auto;
-  font-family: Tahoma;
+  font-family:"2  Nazanin";
   padding: 20px;
+  text-align: center;
+  background: beige;
+  border-radius: 10px;
 }
 
 input[type="text"] {
