@@ -9,8 +9,14 @@
   </router-link>
 
   <router-link to="/DotPattern">
-    <button type="button" class="btn btn-outline-danger" style="padding: 5px">
+    <button type="button" class="btn btn-outline-danger" style="padding: 5px; margin-right: 10px ">
       DotPattern
+    </button>
+  </router-link>
+
+  <router-link to="/Fibonacci">
+    <button type="button" class="btn btn-outline-warning" style="padding: 5px">
+      FibonacciPattern
     </button>
   </router-link>
 
