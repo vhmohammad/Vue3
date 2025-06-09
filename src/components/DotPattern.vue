@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 .pattern {
-  font-family: monospace;
+  font-family:"2  Nazanin";
   white-space: pre;
   text-align: center;
   border-radius: 20px;
