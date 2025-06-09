@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import TodoList from '../components/TodoList.vue';
 import DotPattern from "../components/DotPattern.vue";
 import Fibonacci from "../components/Fibonacci.vue";
+import ListNamber from "../components/ListNamber.vue";
 
 const routes = [
     {
@@ -20,6 +21,12 @@ const routes = [
         name: 'Fibonacci',
         component: Fibonacci
     },
+    {
+        path: '/ListNamber',
+        name: 'ListNamber',
+        component: ListNamber
+    },
+
 ];
 
 const router = createRouter({
