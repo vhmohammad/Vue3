@@ -42,7 +42,7 @@ export default {
   font-family: monospace;
   white-space: pre;
   text-align: center;
-
+  border-radius: 20px;
   background:ghostwhite;
   width: 40%;
   margin-left: 30%;
