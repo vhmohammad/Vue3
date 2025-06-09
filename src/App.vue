@@ -15,8 +15,14 @@
     </router-link>
 
     <router-link to="/Fibonacci">
-      <button type="button" class="btn btn-outline-warning" style="padding: 5px">
+      <button type="button" class="btn btn-outline-warning" style="padding: 5px; margin-right: 10px ">
         FibonacciPattern
+      </button>
+    </router-link>
+
+    <router-link to="/ListNamber">
+      <button type="button" class="btn btn-outline-success" style="padding: 5px">
+        List Number
       </button>
     </router-link>
 
