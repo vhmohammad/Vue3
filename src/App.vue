@@ -24,6 +24,9 @@
       <button type="button" class="btn btn-outline-success" style="padding: 5px">
         List Number
       </button>
+
+      <hr>
+
     </router-link>
 
     <router-view>
