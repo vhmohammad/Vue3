@@ -3,6 +3,7 @@ import TodoList from '../components/TodoList.vue';
 import DotPattern from "../components/DotPattern.vue";
 import Fibonacci from "../components/Fibonacci.vue";
 import ListNamber from "../components/ListNamber.vue";
+import ProductList from "../components/ProductList.vue";
 
 const routes = [
     {
@@ -25,6 +26,11 @@ const routes = [
         path: '/ListNamber',
         name: 'ListNamber',
         component: ListNamber
+    },
+    {
+        path: '/ProductList',
+        name: 'ProductList',
+        component: ProductList
     },
 
 ];
