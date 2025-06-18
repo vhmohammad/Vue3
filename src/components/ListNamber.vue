@@ -58,7 +58,7 @@ ul {
   font-family:"2  Nazanin";
   background:ghostwhite;
   width: 40%;
-  margin-left: 30%;
+  margin-right: 30%;
   border-radius: 20px;
 }
 .marg{
