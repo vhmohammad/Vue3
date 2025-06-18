@@ -45,6 +45,6 @@ export default {
   border-radius: 20px;
   background:ghostwhite;
   width: 40%;
-  margin-left: 30%;
+  margin-right: 30%;
 }
 </style>
